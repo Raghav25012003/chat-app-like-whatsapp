@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Raghav Pro</string>
+    <string name="title_activity_menupage">menupage</string>
+    <string name="tab_text_1">Chat</string>
+    <string name="tab_text_2">Groups</string>
+    <string name="tab_text_3">Friends</string>
+    <string name="tab_text_4">Requests</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".selectedUserProfile">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/photo_container"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="90dp"
+        app:cardCornerRadius="250dp">
+
+
+        <ImageView
+            android:id="@+id/selected_user_photo"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/profilephoto" />
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/selected_user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="User Name will Shown here"
+        android:layout_below="@+id/photo_container"
+        android:layout_marginTop="60dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/selected_user_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="User Name will Shown here"
+        android:layout_below="@+id/selected_user_name"
+        android:layout_marginTop="60dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="25dp"
+        android:textStyle="normal"
+        />
+
+    <Button
+        android:id="@+id/requestOrCancel_Button"
+        android:layout_width="300dp"
+        android:layout_height="55dp"
+        android:layout_below="@+id/selected_user_status"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+
+
+        android:text="Send freind request" />
+
+    <Button
+        android:id="@+id/cancel_request_button"
+        android:layout_width="300dp"
+        android:layout_height="55dp"
+        android:layout_below="@+id/requestOrCancel_Button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+
+        android:onClick="cancelRequest"
+        android:text="Cancel Request"
+        android:visibility="invisible" />
+</RelativeLayout>
